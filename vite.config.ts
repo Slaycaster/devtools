@@ -7,6 +7,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/devtools/',
   server: {
     allowedHosts: ['denimar-pc.tailbd9089.ts.net'],
   },
