@@ -172,8 +172,6 @@ export function Base64Tool() {
 
   // ── Render ───────────────────────────────────────────────────────────────────
 
-  const encodeOutputBytes = encodeOutput ? Math.ceil(encodeOutput.length * 3 / 4) : 0
-
   return (
     <div className="p-6 max-w-5xl mx-auto space-y-5">
       {/* Header + mode toggle */}
