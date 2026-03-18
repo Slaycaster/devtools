@@ -5,6 +5,7 @@ import { JsonFormatter } from './components/tools/JsonFormatter'
 import { TokenCounter } from './components/tools/TokenCounter'
 import { ColorPicker } from './components/tools/ColorPicker'
 import { JsonTomlConverter } from './components/tools/JsonTomlConverter'
+import { Base64Tool } from './components/tools/Base64Tool'
 import type { Tab } from './components/TabBar'
 
 const TABS: Tab[] = [
@@ -13,6 +14,7 @@ const TABS: Tab[] = [
   { id: 'tokens', label: 'Token Counter', icon: '🪙' },
   { id: 'color', label: 'Color Picker', icon: '🎨' },
   { id: 'toml', label: 'JSON ↔ TOON', icon: '🔄' },
+  { id: 'base64', label: 'Base64', icon: '🔑' },
 ]
 
 function App() {
@@ -46,6 +48,9 @@ function App() {
         </div>
         <div style={{ display: activeTab === 'toml' ? 'block' : 'none' }}>
           <JsonTomlConverter />
+        </div>
+        <div style={{ display: activeTab === 'base64' ? 'block' : 'none' }}>
+          <Base64Tool />
         </div>
       </main>
     </div>
